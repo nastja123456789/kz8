@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Deploy Ml model</title>
+    </head>
+    <body>
+        <form action="." method="post">
+            {% csrf_token %}
+
+					<span class="label-input100">Your Age :</span>
+					<input class="input100" type="number" name="sepal_length" placeholder="Enter Your Age"><br><br>
+
+					<span class="label-input100">Mean_Radius :</span>
+					<input class="input100" type="number" name="sepal_width" placeholder="Enter Mean Radius"><br><br>
+
+                    <button class="contact100-form-btn">Submit</button>
+        </form>
+    <div>{{ result }}</div>
+    </body>
+</html>
